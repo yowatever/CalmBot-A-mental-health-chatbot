@@ -337,6 +337,7 @@ def gratitude_entry():
     return render_template('gratitude_entry.html', gratitudes=gratitudes)
 
 # Run the app
-if __name__ == '__main__':
-    app.run(debug=True)
+#if __name__ == '__main__':
+#   app.run(debug=True)
+app = Flask(__name__)
 
