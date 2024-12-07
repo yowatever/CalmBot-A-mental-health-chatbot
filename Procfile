@@ -1,1 +1,2 @@
-web: gunicorn calm bot.app.app:app
+web: gunicorn CalmBot.app.app:app
+
