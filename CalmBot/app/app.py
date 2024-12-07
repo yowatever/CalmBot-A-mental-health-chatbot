@@ -1,13 +1,13 @@
 from flask import Flask, render_template, request, jsonify, session
 import os
 
-from CalmBot.app.models.response_model import ResponseModel
-
+from app.models.response_model import ResponseModel
+#from app.models.response_model import ResponseModel
 from flask import send_file
 from PIL import Image
 import io
 from datetime import datetime
-from CalmBot.app.models.database import CalendarEntry, MoodEntry, User, db, UserActivity, GratitudeEntry
+from app.models.database import CalendarEntry, MoodEntry, User, db, UserActivity, GratitudeEntry
 from sqlalchemy import extract
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask import redirect, url_for, session
@@ -15,9 +15,9 @@ from functools import wraps
 from flask import Flask, render_template, request, jsonify, session
 import os
 import requests
-from CalmBot.app.models.response_model import ResponseModel
+from app.models.response_model import ResponseModel
 from datetime import datetime
-from CalmBot.app.models.database import CalendarEntry, MoodEntry, User, db, UserActivity, GratitudeEntry
+from app.models.database import CalendarEntry, MoodEntry, User, db, UserActivity, GratitudeEntry
 from sqlalchemy import extract
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask import redirect, url_for
@@ -339,7 +339,7 @@ def gratitude_entry():
     return render_template('gratitude_entry.html', gratitudes=gratitudes)
 
 # Run the app
-#if __name__ == '__main__':
-#   app.run(debug=True)
-app = Flask(__name__)
+if __name__ == '__main__':
+    app.run(debug=True)
+#app = Flask(__name__)
 
