@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, jsonify, session
 import os
-from app.models.response_model import ResponseModel
+
+from CalmBot.app.models.response_model import ResponseModel
+
 from flask import send_file
 from PIL import Image
 import io
