@@ -15,47 +15,75 @@ Follow these steps to set up the project locally:
    cd CalmBot-Chatbot
 Create and activate a virtual environment:
 
-bash
-Copy code
+```bash
+
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
+```
 # or
+```
 venv\Scripts\activate  # Windows
+```
 Install dependencies:
 
-bash
-Copy code
+```bash
+
 pip install -r requirements.txt
+```
 Run the application:
 
-bash
-Copy code
+```bash
+
 python app.py
+```
 Open the application in your browser at:
 
-arduino
-Copy code
+```
 http://localhost:5000
-Features
+```
+## Features
+
 Real-Time Chat Support: Engage in empathetic conversations for emotional well-being.
+
 Mood Tracking: Log and visualize your daily emotions over time.
+
 Breathing Exercises: Guided exercises to help reduce stress.
+
 Gratitude Journal: Record moments of gratitude to cultivate positivity.
+
 Dark/Light Mode: Switch between themes for a comfortable user experience.
-Technologies
+
+---
+
+
+## Technologies
+
 Backend: Python/Flask
+
 Frontend: HTML, CSS, JavaScript
+
 Natural Language Processing: Pattern-based NLP for basic conversation modeling
+
 Dataset: EmpatheticDialogues Dataset
-Model: 
-Contributing
+
+---
+
+
+
+
+## Contributing
+
+
 Fork the repository.
+
 Create a new branch:
-bash
-Copy code
+```bash
+
 git checkout -b feature-name
+```
 Commit your changes and push to your fork:
-bash
-Copy code
+```bash
+
 git push origin feature-name
-Submit a pull request with a detailed description of your feature or fix.
+```
+
